@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+body{
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: flex;
+  align-items: center;
+  background-color:#d87b1f;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+
+}
+.logo-background{
+  background-color: white;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.logo{
+  width: 200px;
+  height: 150px;
+}
+.text-container{
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.historic-button{
+  background-color:#720026;
+  font-size: 15px;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.historic-button:hover{
+  background-color: #dc2f02;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.information{
+  background-image: url("https://th.bing.com/th/id/OIP.BmpMllruEJ36kQCQH48XaAHaFj?w=229&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #2f4858;
+  font-size: 25px;
+  font-weight: bold;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container {
+  display: flex;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container button {
+  background-color: #720026;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #53001a;
+}
+
+.save-button {
+  background-color: #0d652d;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #084e23;
+}
+
+.edit-button {
+  background-color: #d87b1f;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.edit-button:hover {
+  background-color: #faa307;
 }
