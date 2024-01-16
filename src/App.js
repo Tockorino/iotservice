@@ -56,7 +56,7 @@ function App() {
                     <img src="https://www.leuzesports.com/images/upload/655-logosite-1.png" alt="Logo" className="logo" />
                 </div>
                 <div className="text-container">
-                    <h1>Données de la salle</h1>
+                    <h1>Data</h1>
                 </div>
             </div>
 
