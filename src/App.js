@@ -114,20 +114,7 @@ function App() {
                     <ul>
                         <li key={todayVisit.id}>
                 <span>
-                    Date: {new Date(todayVisit.date?.seconds * 1000).toLocaleString()}, Personnes présentes: {todayVisit.numberOfPeople}, Notes: {todayVisit.note}
-                    {todayVisit.id === editingNote && (
-                        <>
-                            <input
-                                type="text"
-                                value={todayVisit.note}
-                                onChange={(e) => setTodayVisit({ ...todayVisit, note: e.target.value })}
-                            />
-                            <button onClick={() => handleSaveNote(todayVisit.id, todayVisit.note)}>Enregistrer</button>
-                        </>
-                    )}
-                    {!editingNote && (
-                        <button onClick={() => handleEditNote(todayVisit.id)}>Modifier la note</button>
-                    )}
+                    Date: {new Date(todayVisit.date?.seconds * 1000).toLocaleString()}, Personnes présentes: {todayVisit.numberOfPeople}
                 </span>
                         </li>
                     </ul>
@@ -149,7 +136,7 @@ function App() {
                         {dailyVisits.map((visit) => (
                             <li key={visit.id}>
             <span>
-                Date: {new Date(visit.date?.seconds * 1000).toLocaleString()}, Personnes présentes: {visit.numberOfPeople}, Notes: {visit.note}
+                Date: {new Date(visit.date?.seconds * 1000).toLocaleString()}, Visites enregistrées: {visit.dailyCount}, Notes: {visit.note}
                 {visit.id === editingNote && (
                     <>
                         <input
